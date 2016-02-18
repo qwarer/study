@@ -53,7 +53,7 @@ def getJs(content,dir):
     for js in jslist:
         JsFile=open(dir+'%s.js'%x,'w')
         x+=1
-        JsFile.write(js)
+        JsFile.write(str(js))
         JsFile.close()
 def main():
     dir='d:\\'+str(time.strftime("%Y%m%d%H%M%S", time.localtime()))
